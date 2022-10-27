@@ -1,0 +1,17 @@
+{
+  "name": "volunteery-redirect-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/style/main.scss:public/style/styles.css",
+    "sass:dev": "sass --watch --embed-source-map src/style/main.scss:public/style/styles.css",
+    "sass:prod": "sass --no-source-map --style compressed src/style/main.scss:public/styles.css"
+  },
+  "author": "Elhanan Avihail",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
