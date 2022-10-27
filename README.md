@@ -47,9 +47,10 @@ async function redirectWhenSiteIsUp() {
 ##### 3 - Re-design the page to fit your website style
 ##### 4 - Set the  "```const url = 'https://volunteery.onrender.com'```" to your URL address
 ##### 5 - Uncomment the XXX function
-##### 6 - Upload to github and publish as free static site (free and quick in many host-services, like render.com) 
+##### 6 - Upload to github and publish it as a free static site (it's free and quick in many host services, like render.com) 
+######  Be aware that the path to the index.html is inside the public folder
 ##### 7 - Send the new static site address as the address of your project
-##### 7 - Enjoy!
+##### 8 - Enjoy!
 
 
 
