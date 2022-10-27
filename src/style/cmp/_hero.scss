@@ -9,7 +9,12 @@
     background-size: cover;
     background-position-y: center;
     background-position-x: 64%;
-    background-image: url(/public/img/hero.jpg);
+
+    body.waiting & {
+        background-image: url(/public/img/hero.jpg);
+        transition: .5s;
+    }
+
     .title {
         background-color: rgba(114, 145, 0, 0.607);
         border-radius: 8px;
@@ -20,14 +25,17 @@
         right: 5vw;
         top: 20vh;
         padding: 1rem;
+
         @include for-mobile-layout {
             font-size: 1rem;
             text-align: center;
             padding: 5px;
         }
+
         h1 {
             line-height: 1;
         }
+
         p {
             background-color: rgba(95, 95, 95, 0.402);
             font-size: 1.3rem;
