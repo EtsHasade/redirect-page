@@ -1,14 +1,22 @@
 // init()
+let isNeedToRunApp = true
+
 window.addEventListener('load', init)
 function init() {
     console.log('init');
-    
+
+    document.body.addEventListener('keyup', (ev) => {
+        if (ev.key === 'Escape') {
+            isNeedToRunApp = false
+            console.log('Do not run redirect!')
+        }
+    })
+
     redirectWhenSiteIsUp()
-    setTimeout(()=>{
+    setTimeout(() => {
         console.log('Waiting...');
-        
         document.body.classList.add('waiting')
-    },500)
+    }, 500)
 
 }
 
@@ -25,7 +33,7 @@ async function redirectWhenSiteIsUp() {
     console.log('Going to site');
     document.body.classList.add('complete')
     setTimeout(() => {
-        window.location.replace(url)
+        if (isNeedToRunApp) window.location.replace(url)
     }, 1000)
 }
 

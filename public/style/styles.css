@@ -247,9 +247,12 @@ form .el-textarea__inner::placeholder {
   background-size: cover;
   background-position-y: center;
   background-position-x: 64%;
+  background-blend-mode: overlay;
+  background-color: #a4ca38;
 }
 body.waiting .hero {
-  background-image: url(/public/img/hero.jpg);
+  background-image: url(../img/hero.jpg);
+  background-color: rgba(255, 255, 255, 0);
   transition: 0.5s;
 }
 .hero .title {
