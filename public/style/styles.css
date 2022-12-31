@@ -1,6 +1,7 @@
 @font-face {
   font-family: regular;
-  src: url(/public/asset/fonts/VarelaRound/VarelaRound-Regular.ttf);
+  src: url(../asset/fonts/VarelaRound/VarelaRound-Regular.ttf);
+  src: url(../asset/fonts/VarelaRound/VarelaRound-Regular.ttf);
 }
 @font-face {
   font-family: hindBold;
